@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <form action="" method="get">
+
+    <div>
+      <label>좋아하는 영화 :
+        <select id="movie" name="movie" required>
+          <option value="">한가지 꼭 선택하세요</option>
+          
+          <optgroup label="animation">
+            <option value="toystory">토이스토리</option>
+            <option value="zootopia" selected>주토피아</option>
+            <option value="inside">인사이드</option>
+          </optgroup>
+
+          <optgroup label="sf">
+            <option value="marrix">매트릭스</option>
+          </optgroup>
+        </select>
+      </label>
+    </div>
+    
+    <div>
+      <label>checkbox :
+        <input type="checkbox" name="check1" >
+        <input type="checkbox" name="check2" >
+        <input type="checkbox" name="check3" >
+      </label>
+    </div>
+    
+    <input type="submit">
+  </form>
+</body>
+</html>

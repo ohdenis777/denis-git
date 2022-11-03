@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form method="get">
+
+    <div> 
+      <label>이름 :
+        <input type="text" name="name" placeholder="예)홍길동" disabled> 
+      </label>
+      </div>
+  
+      <div> 
+      <label>직업 :
+        <input type="text" name="job" placeholder="예)학생" required>
+      </label>
+      </div>
+      
+      <div> 
+      <label>나이 :
+        <input type="text" name="age" readonly>
+      </label>
+      </div>
+      
+      <div> 
+        <label>나이 :
+          <input type="text" name="age"  value="20" readonly>
+        </label>
+      </div>
+
+      <div> 
+        <label>평점 :
+          <input type="number" name="score" min="-10" max="10" step="2">
+        </label>
+      
+      </div>
+      <div> 
+        <label>평점 :
+          <input type="range" name="score" min="-10" max="10" step="2">
+        </label>
+      </div>
+
+      
+
+  
+      <input type="reset">
+      <input type="submit">
+  
+  
+    </form>
+  
+</body>
+</html>
+
+<div>
+  <input type="number" name="score" min="-10" max="10" step="2">
+  에서 step 속성은 들어간 숫자만큼 건너뛴다.
+</div>

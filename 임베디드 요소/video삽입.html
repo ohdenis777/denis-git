@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>비디오</h2>
+  <video controls>
+    <source src="video/videosample.mp4">
+    죄송합니다. 동영상이 재생되지 않습니다.
+  </video>
+
+  <h2>비디오</h2>
+  <video autoplay muted>
+    <source src="video/videosample.mp4">
+    죄송합니다. 동영상이 재생되지 않습니다.
+  </video>
+
+  <h2>비디오</h2>
+  <video poster="images/600.png" controls>
+    <source src="video/videosample.mp4">
+    죄송합니다. 동영상이 재생되지 않습니다.
+  </video>
+</body>
+</html>
+
+
+비디오 태그 안에는 자식 요소가 들어갈 수 있다. 
+
+video 속성 중 autoplay는 페이지에 접속하면 자동으로 영상이 시작한다. 하지만 음성이 있는 동영상에 경우
+새로고침을 한 후에는 자동으로 영상이 재생되지 않는다.
+
+따라서 새로고침을 해도 계속 자동으로 동영상이 재생되기를 원하면 <video autoplay muted></video>를 하면된다.
