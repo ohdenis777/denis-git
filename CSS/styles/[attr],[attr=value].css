@@ -1,0 +1,30 @@
+/* Attributer selector (속성 선택자)*/
+
+/* 1. [attr] */
+
+a[target] {
+  color: hotpink;
+}
+
+/* 2. [attr=value] */
+
+a[href="https://example.org"] {
+  color: green
+}
+
+/* 3. [attr^=value] ""시작하는 애들 전부 */
+a[href^="htt:"] {
+  color: blueviolet;
+}
+
+/* 4. [attr$=value] ""끝나는 애들 전부 */
+a[href$=".denis"] {
+  color: chocolate;
+}
+
+/* 5. [attr*=value] ""들어가는 단어 전부 다 */
+a[href*="ht"] {
+  color: yellow;
+}
+
+/* 주의!!! 만약 중복되는 경우에는 맨 마지막에 한것이 적용됨 */

@@ -1,0 +1,21 @@
+/* 선택적 결함  (하위, 자식, 형제 선택자, 그룹화*/
+
+
+ul li:last-of-type {
+  color: blueviolet;
+}
+
+/* 안에 어려 자식이 없는 경우 사용 가능*/
+
+#list li:last-of-type {
+  color: yellow;
+}
+
+/* id 속성이 있는 경우 */
+
+
+ul>li:last-of-type {
+  color: green;
+}
+
+/* 안에 자식이 많은 경우 직속 자식에게만 적용할때.*/

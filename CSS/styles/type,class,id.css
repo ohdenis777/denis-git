@@ -1,0 +1,30 @@
+/* type selector */
+
+
+h2 {
+  color: purple;
+}
+
+/*Id selecter*/
+#welcome-title {
+  color: green;
+}
+
+/* class selecter*/
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+/* type slector을 사용하게 되는 경우 h2에 색깔을 적용하면
+그 밑에 있는 h2 전부 색깔이 변하게 된다. 따라서,
+id selecter 와 class selecter을 사용하여 부분 변경을 한다.
+
+id selecter은 #로 시작하고
+class selecter은 .으로 시작한다.
+
+단, id의 이름은 절대로 중복이 되어서는 안된다.
+class는 같은 이름 중복 가능.

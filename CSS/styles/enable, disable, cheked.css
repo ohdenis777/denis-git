@@ -1,0 +1,27 @@
+/* 가상 클래스 선택자 콜론 : 사용*/
+
+input[type="text"] {
+  background-color: aqua;
+}
+
+/*input text  전체 백그라운드 색깔 변경*/
+
+input[type="text"]:enabled {
+  background-color: aqua;
+}
+
+/* disable 제외한  배경색깔 변경*/
+
+input[type="text"]:disabled {
+  background-color: yellow;
+}
+
+/* disable 배경색깔 변경*/
+
+input[type="radio"]:checked {
+  outline: 4px solid red;
+}
+
+input[type="checkbox"]:checked {
+  outline: 4px solid blue;
+}

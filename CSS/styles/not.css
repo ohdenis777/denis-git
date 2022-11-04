@@ -1,0 +1,19 @@
+/* 가상 클래스 선택자 콜론 : 사용*/
+
+input {
+  background-color: aquamarine;
+}
+
+/* 1. 모든 input에 해당하는 태그 배경 색깔이 바뀐다.*/
+
+input:not(.pw) {
+  background-color: chartreuse;
+}
+
+/* 2. class pw  빼고 색깔이 바뀐다.*/
+
+input:not([type="submit"]) {
+  background-color: red;
+}
+
+/* 3. type="submit" 빼고 색깔이 바뀐다.*/
