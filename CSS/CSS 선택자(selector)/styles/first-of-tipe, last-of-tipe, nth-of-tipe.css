@@ -1,0 +1,28 @@
+/* 가상 클래스 선택자 콜론 : 사용*/
+
+/* 1. first-of-type*/
+
+
+p:first-of-type {
+  color: aqua;
+}
+
+/*first-child와 달리 p의 첫번째 태그에 적용된다.*/
+
+.movie:first-of-type {
+  color: blueviolet;
+}
+
+/* 이 경우에는 movie 속성을 가진 모든 태그 첫번째에 적용된다.*/
+
+/* 2. last-of-type*/
+p:last-of-type {
+  color: yellow
+}
+
+
+/* 2. nth-of-type*/
+
+p:nth-of-type(2) {
+  color: blue;
+}

@@ -1,0 +1,29 @@
+/* 상속제어하기 - 1.initial 2.inherit 3.unset*/
+
+div {
+  border: 1px solid silver;
+  margin: 2px;
+}
+
+.parent {
+  color: blue;
+  font-size: 7px;
+}
+
+/* ↳ 이렇게 설정하면 .parent 밑에 있는 .child1
+child2 까지 상속되어 색이 적용된다.*/
+
+
+.child22 {
+  color: initial
+}
+
+/* ↳ initial을 붙이면 상속받는것을 제어한다.*/
+
+
+.child22 {
+  all: initial
+}
+
+/*↳ 만약 부모의 상속 말고도 위에서 오는 상속을
+모두 제어하고 싶으면  all:initial 사용*/

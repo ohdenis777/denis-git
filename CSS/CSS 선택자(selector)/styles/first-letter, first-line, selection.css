@@ -1,0 +1,22 @@
+/* 가상 클래스 선택자 콜론 : 사용*/
+
+
+.운동::first-letter {
+  color: aqua;
+}
+
+/* 첫번째 글자에 적용된다.*/
+
+.운동::first-line {
+  color: blue;
+  ;
+}
+
+/* 첫번째 문장에 적용된다.*/
+
+.운동::selection {
+  background-color: green;
+  ;
+}
+
+/* 드래그하는 곳에 적용된다.*/

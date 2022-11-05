@@ -1,0 +1,28 @@
+/* 가상 클래스 선택자 콜론 : 사용*/
+
+/* 1. first child 첫번째 자식만 적용*/
+
+li:first-child {
+  color: yellow;
+}
+
+/* 이때 <li>first item</li>는 ol태그의 첫번째 자식이 아니므로 적용되지 않는다.*/
+
+.gogo:first-child {
+  color: purple;
+}
+
+
+
+/* 2. last-child 마지막 자식만 적용*/
+
+.denis:last-child {
+  color: aquamarine;
+}
+
+/* 3. nth-child ()숫자 자식들에 적용*/
+li:nth-child(2) {
+  color: brown;
+}
+
+/*()함수도 가능 예) 2n 짝수, 2n-1홀수*/

@@ -1,0 +1,29 @@
+/*우선 순위
+1. 선언된 곳
+2. 명시도 (적용범위가 적을수록 명시도가 높은것!)
+3. 코드 위치
+*/
+
+#box {
+  color: blue;
+}
+
+/*1. ↳우선순위: 맨 마지막에 쓴 코드에 색깔이 적용된다. 
+head  태그에서 style 태그를 link csss 태그 뒤에 사용해서
+뒤에 온 style 태그 색깔이 적용됨.
+
+
+/* 2. 명시도
+
+뒤에 있는 태그가 이기지만
+여기에서도 강한 태그들이 있음.
+
+-순위-
+1.inline style= 태그 안에다 style 넣는거
+2. ID 
+3. class / attribute/ pseudo class
+4.type (tag)
+5. *
+6. inherited
+
+*/

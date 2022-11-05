@@ -1,0 +1,40 @@
+/* 상속제어하기 - 1.initial(상속 제어) 2.inherit(상속 무조건 받기) 3.unset*/
+
+div {
+  border: 1px solid silver;
+  margin: 2px;
+}
+
+.child1 {
+  color: red;
+}
+
+.parent,
+.parent2 {
+  color: blue;
+}
+
+
+.parent2 * {
+  all: inherit;
+}
+
+/* 3번째 all inherit 이 없었으면 두번째 child1은
+빨간색이였을것, 하지만 inhrit으로 무조건 상속 받는 경우라서
+blue 색이 적용 됬다.
+
+
+/* unset
+
+1. 부모로부터 상속받을 값이 있을때: inherit 이 적용
+2. 부모로부터 상속받을 값이 없을때: initial 이 적용
+
+*/
+.parent3,
+.parent4 {
+  color: purple;
+}
+
+.parent4 .child1 {
+  all: unset;
+}

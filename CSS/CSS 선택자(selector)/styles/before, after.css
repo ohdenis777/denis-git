@@ -1,0 +1,29 @@
+/* 가상 요소 선택자 콜론 :: 사용 */
+
+.movie::before {
+  color: blue;
+}
+
+/* before를 넣으면 페이지에서 색깔 적용은 안되고 
+개발자 모드 들어가서 오른쪽에 보면 before 요소에서 적용된
+색깔이 보인다.*/
+
+.movie::before {
+  content: 'movie';
+  color: blue;
+}
+
+/* content를 추가하면 css가 가상요소를 만든다.(복사나 선택이 안된다.
+그냥 스타일적 요소라고 생각하면 된다.*/
+
+.favorite::before {
+  content: '❤';
+
+}
+
+/* 자기가 원하는 이모티콘도 추가 가능하다.*/
+
+.worst::after {
+  content: '😒';
+
+}

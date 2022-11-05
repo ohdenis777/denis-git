@@ -1,0 +1,41 @@
+/* 선택자 결합 */
+
+
+/* 1. 일반 형제 선택자 결합 (~). 주의 할점: 뒤에 있는 형제 코드 적용*/
+
+/* 예시!!*/
+code~p {
+  color: tomato;
+}
+
+/* ~ 를 사용하면 code 태그 뒤에 있는 모든 p 태그에 색깔이 적용된다.*/
+
+
+span~.win {
+  color: aquamarine;
+
+}
+
+/* ~ 를 사용하면 span 태그 뒤에 있는 모든 class="win" 태그에 색깔이 적용된다.*/
+
+
+
+/* 2. 인접 선택자 결합 (+) 사용. 주의 할점:바로 뒤에 있는 selector에 적용된다.
+
+/* 예시!!*/
+.win+p {
+  background-color: purple;
+}
+
+/* class="win" 바로 뒤에 붙어있는 p태그에만 색깔 적용된다.*/
+
+.uno+div {
+  color: blueviolet;
+}
+
+/* 3.그룹화 (,)사용. 여러개 태그를 선택할 수 있다. */
+/* 예시!!*/
+p,
+code {
+  color: blue;
+}

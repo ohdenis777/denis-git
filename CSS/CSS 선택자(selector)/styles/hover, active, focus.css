@@ -1,0 +1,32 @@
+/* 가상 클래스 선택자 콜론 : 사용*/
+
+/* 클릭할것 같을때 사용*/
+/* 순서: :link ㅡㅡ :visitedㅡㅡ:hoverㅡㅡ:active 순서가 좋다*/
+
+input[type="button"] {
+  color: red;
+  border: none;
+}
+
+input[type="button"]:hover {
+  background-color: teal;
+  color: blue;
+}
+
+/* 1. 클릭할것 같을때, 마우스 갖다 대면 사용*/
+
+input[type="button"]:active {
+  background-color: yellow;
+  color: green;
+
+}
+
+/* 2. 클릭하고 땔때까지*/
+
+input[type="text"]:focus {
+  background-color: purple;
+  color: white;
+
+}
+
+/* 3.tap이나 클릭하면 테두리 안에 색깔 적용*/
