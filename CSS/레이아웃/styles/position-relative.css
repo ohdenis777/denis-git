@@ -1,0 +1,28 @@
+/* 1. position: relative (자신의 기준(즉,기본값 
+.position-static기준)으로 
+위 오른 아래 왼 순서대로 적용됨. */
+
+div {
+  width: 90px;
+  height: 90px;
+  border: 5px solid red;
+  margin-left: 300px;
+}
+
+.box1 {
+  background-color: aquamarine;
+  position: relative;
+  top: 30px;
+  /*위로부터 30px 멀어진다*/
+  left: 20px;
+  /*왼쪽으로부터 20px 멀어진다*/
+
+  /* position:static 일때는
+기본값이라서 top,bottom,left,right 설정 불가*/
+
+  /*position:relative 사용할때
+만약 top, bottom 둘만 설정할 경우 bottom은 무시됨,
+만약 left right 둘만 설정할 경우 right는 무시됨,
+
+**top,left를 우선시** 한다.*/
+}

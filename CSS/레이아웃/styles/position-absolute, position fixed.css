@@ -1,0 +1,70 @@
+/* position: absolute */
+div {
+  width: 100px;
+  height: 100px;
+  border: 5px solid red;
+
+}
+
+
+.box999 {
+  position: relative;
+  /* 기준점이 됨 */
+}
+
+
+.box0000 {
+  width: 50px;
+  height: 50px;
+  border: 5px solid blue;
+  background-color: cornflowerblue;
+  position: absolute;
+
+  /*position: absolute; 적용하게 되면 자기는 자기 자리에서
+  붕뜨게 되고 다음 태그가 자기 위치로 온다. 마치 float처럼*/
+
+  /* position: absolute 인 요소는 부모 요소를 타고올라가면서
+    postion이 static이 아닌 요소를 찾아 기준점을 삼는다.
+  
+  만약 자기 부모 또는 자기가 기준점을 두고 싶은 곳에
+  position relative나 position absolute를
+  적용하지 않으면 자기 조상인 body 기준으로 적용됨.*/
+
+  top: 5px;
+  left: 10px;
+
+}
+
+
+/* 2. position-fixed */
+div {
+  width: 100px;
+  height: 100px;
+  border: 5px solid red;
+
+}
+
+
+
+
+
+.khea2 {
+  width: 50px;
+  height: 50px;
+  border: 5px solid blue;
+  background-color: cornflowerblue;
+  position: fixed;
+  /* position fixed는 뷰포트 맨 위 왼쪽으로 기준으로 삼는다.
+  그래서 실행하면 뷰포트 맨 위에 보일것이다.(기본값일 경우)*/
+  /* 그리고 스크롤을 해도 계속 뷰포트에 보임*/
+  /* 사용자에게 스크롤을 해도 계속 따라다니게 설정하고 싶은
+  경우 사용하면 좋다.*/
+
+
+  top: 0px;
+  left: 0px;
+  /*bottom: 30px;
+  right: 5px;
+  오른쪽 위*/
+
+}

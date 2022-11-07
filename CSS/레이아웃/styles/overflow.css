@@ -1,0 +1,18 @@
+/* overflow */
+/* 특징: 내부 컨텐츠가 외부 컨텐츠를 넘을때 사용 
+즉, 예를들면 내부에 있는 문장이 선을 넘어서 나올때 */
+
+
+div {
+  background-color: burlywood;
+  width: 150px;
+  height: 150px;
+
+  overflow: scroll;
+}
+
+/* overflow를 사용하게 되면 자연스런게
+내부 컨텐츠가 외부 컨텐츠 안으로 들어온다.
+overflow: auto;
+또는 overflow: scroll;를 사용하면
+좋을거 같다.*/

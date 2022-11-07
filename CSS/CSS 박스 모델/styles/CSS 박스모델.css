@@ -1,0 +1,234 @@
+/* 1.  박스모델 (content, padding, border, margin) */
+
+.box {
+  width: 100px;
+  /* width 외 height는 content다.*/
+  height: 100px;
+
+  padding: 30px;
+  border: 30px;
+  background-color: blueviolet;
+  margin: 30px;
+}
+
+/* 2. width, height */
+
+.block {
+  background-color: aqua;
+  width: 300px;
+  height: 300px;
+}
+
+.inline {
+  background-color: rgb(250, 138, 138);
+  width: 300px;
+  height: 300px;
+}
+
+/* 주의 : span은 인라인 요소이므로 간격을 설정해도 적용이 안됨.*/
+
+/* 3. min-width, max width */
+
+.block111 {
+  background-color: chartreuse;
+  width: 50%;
+  min-width: 300px;
+  /* width, height만 설정하면 웹브라우저 크기를
+  변경 했을때 크기가 계속 변하지만 min-width를 설정하면 설정한 크기에
+  달았을때 더 이상 작아지지 않음. */
+  height: 300px;
+}
+
+.inline111 {
+  background-color: rgb(255, 183, 0);
+  width: 50%;
+  max-width: 300px;
+  /* width, height만 설정하면 웹브라우저 크기를
+  변경 했을때 크기가 계속 변하지만 min-width를 설정하면 설정한 크기에
+  달았을때 더 이상 작아지지 않음. */
+  height: 90%;
+}
+
+
+/* 4. margin (여백을 두기 위한 용도) */
+#denis {
+  width: 300px;
+  height: 300px;
+  border: 5px solid forestgreen;
+}
+
+#heran {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  /*margin을 사용하지 않을 경우 부모와 딱 붙음*/
+  /*margin: 20px 40px (2개) 하게되면 20px은 위 아래, 40px은 좌 우로
+  여백을 둔다 */
+
+  /*margin: 20px 30px 40px 50px (4개) 하게되면 20px은 위, 30px은 오른쪽,
+  40px은 아래, 50px은 왼쪽에 여백을 둔다. 즉, 시계방향이다.*/
+
+  /*margin: 20px 30px 40px (3개) 하게되면 20px은 위, 30px은 좌우, 
+  40px은 아래에 여백을 둔다.*/
+  border: 5px solid purple;
+}
+
+/* 5. margin collapsing 마진 결합*/
+body {
+  margin: 0;
+}
+
+.hola {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+
+  margin: 20px;
+
+  margin-top: 10px;
+  margin-bottom: 60px;
+  /* hola 첫번째 칸 위에는 10px 여백, 아래는 60px
+    hola 두번째 칸에도 똑같이 적용 되지만 
+    첫번째 칸 아래 60과 두번째 칸 위 10 과 합쳐져서
+    여백 공같이 60 으로 보인다. 이것을 마진 결합이라고 한다. */
+}
+
+/* 6. margin collapsing 2 마진 결합2*/
+body {
+  margin: 0;
+}
+
+#kpop {
+  width: 100px;
+  height: 100px;
+  background-color: lime;
+  margin-top: 30px;
+}
+
+#kpop22 {
+  width: 30px;
+  height: 30px;
+
+  background-color: chocolate;
+  margin-top: 40px;
+}
+
+/* 위에 처럼 적용할 경우 보통 생각으로는 자식 박스가
+부모박스로부터 40px정도 떨어져 있을것 같지만,
+부모박스는 30px위로 자식박스도 위로 40px 위로 서로 결합되어
+40px로 여분이 생긴다. */
+
+/* 이것을 해결하고 싶으면 결합을 제거하는 padding 이나 border
+을 적용 하면 된다. 그러면 두번째 박스와 첫번째 박스가 위 아래로
+여분이 생긴다. ↓↓*/
+↓ #kpppppppp {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin-top: 30px;
+  border: 1px solid red;
+}
+
+#kppppppp2 {
+  width: 30px;
+  height: 30px;
+
+  background-color: chocolate;
+  margin-top: 40px;
+}
+
+
+/*7.padding */
+#queseyo {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+}
+
+#queseyo2 {
+  width: 80px;
+  height: 80px;
+  background-color: darkblue;
+  padding: 15px;
+  /* 만약 px대신 % 를 사용하면 부모의 widhtd의
+  % 값이다. */
+  /* padding 도 4가지까지 가능. 시계방향. */
+}
+
+#queseyo3 {
+  width: 30px;
+  height: 30px;
+  background-color: hotpink;
+
+}
+
+/*8. border style, border width, border color */
+
+#sepuede {
+  width: 200px;
+  height: 200px;
+
+  border-style: dotted;
+  border-width: 10px;
+  border-color: lightcoral;
+  /*색깔에는 4가지까지 적용 가능. 시계방향임 */
+
+  background-color: aquamarine;
+}
+
+/*9. border (shorthand 단축속성 ) */
+
+#sis {
+  width: 400px;
+  height: 400px;
+
+  border: dotted lightcoral 10px;
+
+  background-color: blue;
+}
+
+
+/* 10. border-radius  (꼭지점을 둥글게 만들 수 있다.) */
+#sis00000 {
+  width: 200px;
+  height: 200px;
+
+  border: 5px solid green;
+  border-radius: 100px;
+  /*만약 %로 입력하게 되는 경우 가로와 세로와 
+   %비율로 나타난다. */
+  /* 여기도 4가지 크기까지 가능 */
+
+  background-color: #708eac;
+}
+
+
+/* 11. box-sizing */
+
+#brazil {
+  width: 300px;
+  height: 200px;
+
+  padding: 20px;
+  border: 30px solid blue;
+  box-sizing: content-box;
+  /* 이렇게 적용하면 가로 길이는 총 350px가 된다.
+     ( 300 + padding 20 + border 30 )
+     300 px로 고정하고 싶으면  
+      box-sizing: border-box; 를 넣으면 된다.
+      
+      또는 
+      
+      * {box-sizing: content-box;}
+
+      #brazil {
+         width: 300px;
+         height: 200px;
+
+         padding: 20px;
+         border: 30px solid blue;
+      */
+
+
+  background-color: pink
+}

@@ -1,0 +1,18 @@
+/* background color
+이미 너무 많이 사용해서 패스  */
+
+/* background image */
+/* 특징: background color 와 background image 같이
+사용하면 background image가 background color 보다 앞에 나온다.*/
+
+.mola {
+  width: 300px;
+  height: 300px;
+
+  position: fixed;
+  left: 10px;
+  top: 10px;
+
+  background-color: aqua;
+  background-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/lizard.png);
+}

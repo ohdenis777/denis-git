@@ -1,0 +1,16 @@
+/* background size */
+
+.h400 {
+  height: 500px;
+
+  border: blue 6px solid;
+  background-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/hand.jpg);
+  background-repeat: no-repeat;
+
+  background-size: 100px, 100px;
+  /* contain / cover : 이미지의 비율을 유지하며 요소의 크기에 맞춰진다.*/
+  /* px, px 설정할 경우 width,height 값이다 */
+}
+
+/* 마지막으로 background 초기값도 알면 좋다.
+https://developer.mozilla.org/en-US/docs/Web/CSS/background*/

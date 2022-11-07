@@ -1,0 +1,123 @@
+/* 1. transition-property (무엇을 바꿀지)
+   transition-duration (얼마동안 바꿀지) */
+
+
+.box {
+  width: 300px;
+  height: 90px;
+  border: 5px darkblue dashed;
+  background-color: bisque;
+  font-size: 30px;
+  color: white;
+  margin-left: 50px;
+
+  transition-property: all;
+  transition-duration: 2s;
+
+  /*transition-property: all;
+  transition-duration: 2s; 를 밑에 hover 에다 적용하면
+  hover의 특석상 마우스를 갖다 대면 동작하기 때문에 마우스를
+  때면 바로 원래대로 바뀐다.*/
+
+}
+
+.box:hover {
+  width: 400px;
+  height: 60px;
+  color: black;
+  font: 70px;
+}
+
+
+/* 2.trasition delay (설정한 초(값) 뒤에 적용됨 */
+.box333 {
+  width: 300px;
+  height: 90px;
+  border: 5px darkblue dashed;
+  background-color: bisque;
+  font-size: 30px;
+  color: white;
+  margin-left: 50px;
+
+  transition-property: all;
+  transition-duration: 2s;
+  transition-delay: 3s;
+  /* 3초 뒤에 밑에 적용한게 나타남*/
+}
+
+.box333:hover {
+  background-color: blueviolet;
+}
+
+/* 3.trasition-timing-function */
+
+.box555 {
+  width: 300px;
+  height: 90px;
+  border: 5px rgb(209, 206, 61) dashed;
+  background-color: bisque;
+  font-size: 30px;
+  color: white;
+  margin-left: 50px;
+
+  transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+}
+
+.box555:hover {
+  background-color: rgb(21, 130, 63);
+  height: 500px;
+}
+
+/* 4.trasition 단축기 */
+
+.box777 {
+  width: 300px;
+  height: 90px;
+  border: 5px rgb(209, 206, 61) dashed;
+  background-color: bisque;
+  font-size: 30px;
+  color: white;
+  margin-left: 50px;
+
+  /*transition-property: all;
+  transition-duration: 3s;
+  transition-delay: 1s;
+  transition-timing-function: ease-in-out;
+  
+  ↓단축기 예시*/
+
+  transition: all 3s ease-in-out 1s;
+  /* 되도록 순서를 지켜야한다.
+  1.transition-property: ;
+  2.transition-duration: ;
+  3.transition-delay: ;
+  4.transition-timing-function:*/
+
+
+}
+
+.box777:hover {
+  background-color: rgb(21, 130, 63);
+  height: 500px;
+}
+
+/* 5.trasition + transform 활용 예 */
+.box999 {
+  width: 100px;
+  height: 100px;
+  border: 5px solid seagreen;
+  background-color: fuchsia;
+  border-radius: 30px;
+
+
+  transition: all 1s ease-in-out 1s;
+
+
+}
+
+.box999:hover {
+  transform: rotate(360deg);
+  transform-origin: bottom right 60px;
+}

@@ -1,0 +1,84 @@
+/*1.px 절대값을 설정할때 대부분 px을 사용한다.*/
+
+
+/*2. 글꼴 상대길이 em ( 1em = 부모의 font size) 
+예를들면 부모의 font size는 10px 이고 자식의 
+font size를 0.5 em 으로 설정하면 5px로 적용된다. */
+
+.roww {
+  color: aquamarine;
+  font-size: 10px;
+}
+
+.qwe {
+  color: red;
+  font-size: 2em;
+}
+
+
+
+/*3.  글꼴 상대길이 rem ( 1rem = root의 font size. rem 이 em 보다 훨씬 편하다)
+즉, 1rem=16px (웹이 정한 글자 크기) */
+
+.tt5w {
+  color: blueviolet;
+  font-size: 2rem;
+  /* 4rem = 16px * 2 = 32px */
+}
+
+/*4. 뷰포트(화면에 보이는 공간) 상대길이 vw(가로)  */
+
+body {
+  margin: 0;
+}
+
+.p111 {
+  background-color: bisque;
+  width: 100vw;
+  height: 100vw;
+}
+
+/* ↳ 100vw=웹페이지 기본값  이라서 이렇게 적용했을때
+가로, 세로로 색깔이 꽊 찰 줄 알았지만 끝에 하얀색 빈 공간이
+보인다. 이를 해결하기 위해서는 
+ 
+body { margin :0; } 설정 해줘야함. */
+
+/* 5. 상대길이  vmin, vmax 화면의 가로 및 세로 공간 설정할때 */
+
+body {
+  margin: 0;
+}
+
+.denis {
+  background-color: blueviolet;
+  width: 100vmin;
+  height: 100vmax;
+}
+
+
+/* 6. 퍼센트(%) 부모의 몇 퍼센트인지 나탄난다. */
+
+.argen {
+  background-color: aquamarine;
+  width: 100px;
+  height: 100px;
+}
+
+.bsas {
+  background-color: blue;
+  width: 50%;
+  /* 부모가 100px 이므로 50%면 50px로 나타남*/
+  height: 50%;
+}
+
+/* 7. calc( ) 함수 ---- 
+ min, max는 explorer 제공 X */
+
+.mmmm111 {
+  background-color: bisque;
+  width: calc(100% / 2)
+    /* 100% - 50px 등등*/
+  ;
+  height: 40px;
+}

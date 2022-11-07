@@ -1,0 +1,26 @@
+/* 1. background-repeat */
+
+.repeat2 {
+  height: 400px;
+
+  border: solid black;
+  background-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/moon.jpg);
+  background-repeat: repeat-x;
+  /* x축으로 쭉 연결 */
+  /* background-repeat: no repeat 하면 딱 한번만 나온다*/
+
+}
+
+/* 2. background-position 
+
+이미지의 위치를 조정할 수 있다.*/
+
+.repeat3 {
+  height: 400px;
+  width: 400px;
+
+  border: solid black;
+  background-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/moon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

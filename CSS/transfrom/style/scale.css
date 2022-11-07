@@ -1,0 +1,60 @@
+/* 1. 크기 scale */
+
+#bolt {
+  width: 300px;
+
+  transform: scale(0.5, 0.5);
+  /* (x축,y축)
+     scale 값에 하나의 숫자를 적으면 x축 y축 두곳 다 변형됨.*/
+  /* 만약 x축만 변형하고 싶으면 scalex() 를 사용하면 된다. */
+}
+
+
+
+/* 2. 회전 rotate */
+
+#bolt22 {
+  width: 200px;
+
+  transform: rotate(90deg) scale(0.9);
+  /*여기서 deg는 도를 의미, rotate 값에 0.2 값 사용가능*/
+}
+
+/* 3. 이동 translate */
+
+#bolt333 {
+  width: 200px;
+
+  transform: translate(100px)
+    /* (x축,y축)
+    만약 x축만 변형하고 싶으면 translatex()를 사용하면 된다.
+    sclae과 다르게 translate()에 숫자 하나만 기입하면
+    x축으로만 이동한다.*/
+}
+
+/* 4. 기울이기 skew  */
+
+#bolt444 {
+  width: 200px;
+  margin-left: 100px;
+
+  transform: skew(20deg)
+    /* (x축,y축)
+    만약 x축만 변형하고 싶으면 skewx()를 사용하면 된다.
+    sclae과 다르게 translate()에 숫자 하나만 기입하면
+    x축으로만 이동한다.*/
+}
+
+/* 5. 기준점 (원점) transform origin*/
+
+#bolt555 {
+  width: 150px;
+  margin-left: 200px;
+
+  transform: scale(1.5);
+  transform-origin: top right;
+
+  /* transform-origin: 위치(원점);  위치(원점)을 
+  어디에 두누냐에 따라 위치(원점) 기준으로 이미지 scale이나
+  등등을 변형할 수 있다.*/
+}

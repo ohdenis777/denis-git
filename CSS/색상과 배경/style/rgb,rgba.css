@@ -1,0 +1,24 @@
+/* 1. rgb, rgba */
+
+/* rgba 에서 a (0~1)는 농도를 설정한다. */
+
+div {
+  height: 100px;
+  width: 100px;
+  background-color: rgba(0, 0, 250, 0.5);
+
+}
+
+/* 2. opacity (0~1, 1%~100%)  붙루명도를 설정한다.
+특징: 내부에 있는 요소 전부에 영향 */
+
+.helloooo {
+  width: 100px;
+  height: 100px;
+
+  position: fixed;
+  top: 10px;
+  left: 10px;
+
+  opacity: 0.8;
+}

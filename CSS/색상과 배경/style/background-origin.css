@@ -1,0 +1,14 @@
+/* background-origin */
+.tipo2 {
+  height: 200ㅎpx;
+
+  border: 30px solid green;
+  padding: 30px;
+
+
+  background-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/moon.jpg);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  /* content 영역의 기준으로 이미지가 설정된다. 
+  즉 원점을 어디로 할지 정하는거다.*/
+}

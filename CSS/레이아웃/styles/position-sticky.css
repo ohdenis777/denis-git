@@ -1,0 +1,27 @@
+/* position-sticky */
+
+/* 특징 사용자가 스크롤을 할때 positon stick이
+적용된 태그를 기준으로 벗어나가되면 position stick
+이 설정된 태그는 스크롤을 계속 따라간다.*/
+div {
+  width: 100px;
+  height: 100px;
+  border: 5px solid red;
+
+}
+
+
+
+
+.sticky {
+  width: 50px;
+  height: 50px;
+  border: 5px solid blue;
+  background-color: cornflowerblue;
+
+  position: sticky;
+
+  top: 5px;
+  left: 10px;
+
+}
